@@ -1,0 +1,25 @@
+@import 'variables';
+@import 'mixins';
+@import 'functions';
+
+body {
+  font-family: $font-stack;
+  background-color: #f8f9fa;
+  padding: calculate-spacing(2);
+
+  .card {
+    @include rounded(1rem);
+    background-color: white;
+    padding: calculate-spacing(1);
+    margin-bottom: calculate-spacing(1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      color: $primary-color;
+    }
+
+    p {
+      color: $secondary-color;
+    }
+  }
+}
