@@ -1,0 +1,78 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #0d6efd;
+}
+
+.sub-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #5185d3;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease;
+  background-color: white;
+  margin-bottom: 1.5rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit:fill;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+.card a.btn {
+  margin-top: 0.5rem;
+}
+
+
+footer a:hover {
+  text-decoration: underline;
+}
+.link {
+  color: #d351b5;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
