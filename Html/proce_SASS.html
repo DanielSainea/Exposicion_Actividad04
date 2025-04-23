@@ -55,9 +55,136 @@
       </div>
     </div>
 
+    <div class="card my-4">
+      <div class="card-header bg-primary text-white">
+        Variables en SCSS
+      </div>
+      <div class="card-body">
+        <p>Las variables en SCSS nos permiten reutilizar valores como colores o tamaños a lo largo del proyecto.</p>
+        <h6>SCSS:</h6>
+        <pre><code>$primary-color: #3498db;
+    $padding-base: 1rem;
+    
+    .button {
+      background-color: $primary-color;
+      padding: $padding-base;
+    }</code></pre>
+    
+        <h6>CSS generado:</h6>
+        <pre><code>.button {
+      background-color: #3498db;
+      padding: 1rem;
+    }</code></pre>
+    
+        <img src="../IMG/Variables1.png" alt="Ejemplo de variables" class="img-fluid mt-3 border">
+        <img src="../IMG/Variables2.png" alt="Ejemplo de variables" class="img-fluid mt-3 border">
+      </div>
+    </div>
+
+    <div class="card my-4">
+      <div class="card-header bg-success text-white">
+        Mixins en SCSS
+      </div>
+      <div class="card-body">
+        <p>Los mixins permiten reutilizar bloques de código CSS con parámetros si se desea.</p>
+        <h6>SCSS:</h6>
+        <pre><code>@mixin flex-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .box {
+      @include flex-center;
+      height: 100px;
+    }</code></pre>
+    
+        <h6>CSS generado:</h6>
+        <pre><code>.box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+    }</code></pre>
+    
+        <img src="../IMG/Bloques.png" alt="Ejemplo de mixin" class="img-fluid mt-3 border">
+      </div>
+    </div>
+
+    <div class="card my-4">
+      <div class="card-header bg-warning text-dark">
+        Anidamiento en SCSS
+      </div>
+      <div class="card-body">
+        <p>Permite escribir selectores de manera jerárquica como reflejo de la estructura HTML.</p>
+        <h6>SCSS:</h6>
+        <pre><code>.navbar {
+      background-color: #222;
+    
+      ul {
+        list-style: none;
+    
+        li {
+          display: inline-block;
+    
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+    }</code></pre>
+    
+        <h6>CSS generado:</h6>
+        <pre><code>.navbar {
+      background-color: #222;
+    }
+    .navbar ul {
+      list-style: none;
+    }
+    .navbar ul li {
+      display: inline-block;
+    }
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+    }</code></pre>
+    
+        <img src="../IMG/Anidaminto.png" alt="Ejemplo de anidamiento" class="img-fluid mt-3 border">
+      </div>
+    </div>
+    
+    <div class="card my-4">
+      <div class="card-header bg-info text-white">
+        Funciones en SCSS
+      </div>
+      <div class="card-body">
+        <p>Las funciones nos permiten crear utilidades personalizadas para operaciones como unidades, colores, etc.</p>
+        <h6>SCSS:</h6>
+        <pre><code>@function rem($px) {
+      @return $px / 16 * 1rem;
+    }
+    
+    .text {
+      font-size: rem(24); // 1.5rem
+    }</code></pre>
+    
+        <h6>CSS generado:</h6>
+        <pre><code>.text {
+      font-size: 1.5rem;
+    }</code></pre>
+    
+        <img src="../IMG/Function1.png" alt="Ejemplo de función" class="img-fluid mt-3 border">
+        <img src="../IMG/Function2.png" alt="Ejemplo de función" class="img-fluid mt-3 border">
+      </div>
+    </div>
+    
+    
+    
+
     <!-- Botón para volver -->
     <div class="text-center mt-4">
-      <a href="index.html" class="btn btn-primary">← Volver a la página principal</a>
+      <a href="../index.html" class="btn btn-primary">← Volver a la página principal</a>
     </div>
 
     <footer class="bg-dark text-white text-center py-4 mt-5">
