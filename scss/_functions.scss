@@ -1,0 +1,4 @@
+@function calculate-spacing($factor) {
+    @return $factor * 1rem;
+  }
+  
