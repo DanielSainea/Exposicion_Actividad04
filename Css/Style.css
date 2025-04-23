@@ -111,3 +111,10 @@ footer a:hover {
 .pieDePagina{
   color: white;
 }
+
+.react{
+  width: 42%;
+  height: auto;
+  padding-bottom: 1rem;
+  margin-left: 25rem;
+}
